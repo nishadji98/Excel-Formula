@@ -1,0 +1,18 @@
+1️⃣ Google Sheet me jao
+
+Extensions → Apps Script
+
+2️⃣ Jo bhi code dikhe, sab delete karo
+3️⃣ Ye code paste karo 👇
+function onEdit(e) {
+  const range = e.range;
+  const value = range.getValue();
+
+  if (typeof value === 'number') {
+    const formatted = value.toLocaleString('en-IN');
+    range.setValue(formatted);
+  }
+}
+
+4️⃣ Save karo
+5️⃣ Sheet band karo, dubara kholo
